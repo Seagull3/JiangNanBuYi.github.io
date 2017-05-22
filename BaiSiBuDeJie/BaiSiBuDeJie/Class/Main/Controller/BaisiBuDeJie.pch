@@ -1,0 +1,22 @@
+//
+//  BaisiBuDeJie.pch
+//  BaiSiBuDeJie
+//
+//  Created by 江南布衣 on 16/6/18.
+//  Copyright © 2016年 江南布衣. All rights reserved.
+//
+
+#import "UIImageView+download.h"
+#import "UIImage+Oringe.h"
+#import "UIBarButtonItem+OYItem.h"
+
+#define mainScreenW [UIScreen mainScreen].bounds.size.width
+#define mainScreenH [UIScreen mainScreen].bounds.size.height
+
+#import "UIView+Frame.h"
+#import "OYConst.h"
+
+#define OYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define XMGGlobeColor OYColor(215, 215, 215)
+
+#define OYRandomColor OYColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))

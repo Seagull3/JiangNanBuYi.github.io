@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OYRegistLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wRu-c2-BDa" customClass="OYLoginTextFiled">
+                    <rect key="frame" x="37" y="30" width="300" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2VJ-BR-eqd"/>
+                        <constraint firstAttribute="width" constant="300" id="oai-bR-DS9"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDb-NP-dnR" customClass="OYLoginTextFiled">
+                    <rect key="frame" x="37" y="80" width="300" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Bud-0s-SiX"/>
+                        <constraint firstAttribute="width" constant="300" id="VJ6-dM-MkB"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjb-v7-tA6">
+                    <rect key="frame" x="37" y="180" width="300" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="HDg-Zw-U3u"/>
+                    </constraints>
+                    <state key="normal" title="登录" backgroundImage="loginBtnBg">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" title="登录" backgroundImage="loginBtnBgClick"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeU-Mp-ffU">
+                    <rect key="frame" x="237" y="255" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="EdI-gK-5fN"/>
+                    </constraints>
+                    <state key="normal" title="忘记密码?">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VeU-Mp-ffU" firstAttribute="leading" secondItem="Pjb-v7-tA6" secondAttribute="leading" id="26u-ZS-Pyx"/>
+                <constraint firstItem="kDb-NP-dnR" firstAttribute="top" secondItem="wRu-c2-BDa" secondAttribute="bottom" id="4ki-Je-hBl"/>
+                <constraint firstItem="wRu-c2-BDa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9k8-ba-vYt"/>
+                <constraint firstItem="VeU-Mp-ffU" firstAttribute="centerX" secondItem="Pjb-v7-tA6" secondAttribute="centerX" id="Awt-n1-Msp"/>
+                <constraint firstItem="Pjb-v7-tA6" firstAttribute="top" secondItem="kDb-NP-dnR" secondAttribute="bottom" constant="50" id="DVx-c2-IuN"/>
+                <constraint firstItem="kDb-NP-dnR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Gkv-d3-MCu"/>
+                <constraint firstItem="VeU-Mp-ffU" firstAttribute="top" secondItem="Pjb-v7-tA6" secondAttribute="bottom" constant="30" id="LzX-ZX-gGp"/>
+                <constraint firstItem="wRu-c2-BDa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PrJ-IF-pP9"/>
+                <constraint firstItem="Pjb-v7-tA6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Sij-vx-sv2"/>
+                <constraint firstItem="VeU-Mp-ffU" firstAttribute="leading" secondItem="Pjb-v7-tA6" secondAttribute="leading" id="Wso-bG-SRA"/>
+                <constraint firstItem="wRu-c2-BDa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="XW0-lJ-H0v"/>
+                <constraint firstItem="wRu-c2-BDa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dNS-ZW-RkP"/>
+                <constraint firstItem="VeU-Mp-ffU" firstAttribute="trailing" secondItem="Pjb-v7-tA6" secondAttribute="trailing" id="kL7-C7-h95"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9k8-ba-vYt"/>
+                    <exclude reference="PrJ-IF-pP9"/>
+                    <exclude reference="26u-ZS-Pyx"/>
+                    <exclude reference="Awt-n1-Msp"/>
+                    <exclude reference="Wso-bG-SRA"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="loginBtn" destination="Pjb-v7-tA6" id="52l-ti-zjQ"/>
+            </connections>
+            <point key="canvasLocation" x="277.5" y="245"/>
+        </view>
+        <view contentMode="scaleToFill" id="QIX-5S-45G" customClass="OYRegistLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dyj-fj-bdN" customClass="OYLoginTextFiled">
+                    <rect key="frame" x="37" y="30" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KWu-cY-N2o"/>
+                        <constraint firstAttribute="width" constant="300" id="wOt-RA-3CA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-6Y-ewd" customClass="OYLoginTextFiled">
+                    <rect key="frame" x="37" y="80" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="dOd-ki-Eip"/>
+                        <constraint firstAttribute="height" constant="50" id="wT1-jq-VHj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHI-OY-ryd">
+                    <rect key="frame" x="37" y="180" width="300" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Rid-sQ-prg"/>
+                    </constraints>
+                    <state key="normal" title="注册" backgroundImage="loginBtnBg">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" title="注册" backgroundImage="loginBtnBgClick"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0pk-6Y-ewd" firstAttribute="top" secondItem="Dyj-fj-bdN" secondAttribute="bottom" id="5Lv-at-T9W"/>
+                <constraint firstItem="SHI-OY-ryd" firstAttribute="centerX" secondItem="QIX-5S-45G" secondAttribute="centerX" id="Cho-Mq-NIH"/>
+                <constraint firstItem="SHI-OY-ryd" firstAttribute="top" secondItem="0pk-6Y-ewd" secondAttribute="bottom" constant="50" id="FBA-39-9cN"/>
+                <constraint firstItem="Dyj-fj-bdN" firstAttribute="centerY" secondItem="QIX-5S-45G" secondAttribute="centerY" id="OSB-yA-qsI"/>
+                <constraint firstItem="Dyj-fj-bdN" firstAttribute="centerX" secondItem="QIX-5S-45G" secondAttribute="centerX" id="Zwq-Xw-7h7"/>
+                <constraint firstItem="Dyj-fj-bdN" firstAttribute="top" secondItem="QIX-5S-45G" secondAttribute="top" constant="30" id="dPK-Hs-IQi"/>
+                <constraint firstItem="Dyj-fj-bdN" firstAttribute="centerX" secondItem="QIX-5S-45G" secondAttribute="centerX" id="gFB-uo-yQv"/>
+                <constraint firstItem="0pk-6Y-ewd" firstAttribute="centerX" secondItem="QIX-5S-45G" secondAttribute="centerX" id="nSO-U5-uC5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="OSB-yA-qsI"/>
+                    <exclude reference="Zwq-Xw-7h7"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="loginBtn" destination="SHI-OY-ryd" id="Luo-MI-8BH"/>
+            </connections>
+            <point key="canvasLocation" x="277.5" y="245"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBtnBg" width="55" height="45"/>
+        <image name="loginBtnBgClick" width="55" height="45"/>
+    </resources>
+</document>
